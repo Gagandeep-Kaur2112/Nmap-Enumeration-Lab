@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Wed Apr 22 04:40:08 2026 as: /usr/lib/nmap/nmap --privileged -p21 --script ftp-anon -oN scans/ftp_anon.txt 192.168.113.130
+Nmap scan report for 192.168.113.130
+Host is up (0.00042s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+MAC Address: 00:0C:29:5D:E4:CC (VMware)
+
+# Nmap done at Wed Apr 22 04:40:09 2026 -- 1 IP address (1 host up) scanned in 0.71 seconds

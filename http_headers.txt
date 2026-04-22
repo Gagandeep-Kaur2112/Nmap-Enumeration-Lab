@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Wed Apr 22 04:43:07 2026 as: /usr/lib/nmap/nmap --privileged -p80 --script http-headers -oN scans/http_headers.txt 192.168.113.130
+Nmap scan report for 192.168.113.130
+Host is up (0.00040s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-headers: 
+|   Date: Tue, 21 Apr 2026 23:13:14 GMT
+|   Server: Apache/2.2.8 (Ubuntu) DAV/2
+|   X-Powered-By: PHP/5.2.4-2ubuntu5.10
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+MAC Address: 00:0C:29:5D:E4:CC (VMware)
+
+# Nmap done at Wed Apr 22 04:43:08 2026 -- 1 IP address (1 host up) scanned in 0.73 seconds

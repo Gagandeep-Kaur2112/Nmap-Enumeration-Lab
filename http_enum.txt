@@ -1,0 +1,17 @@
+# Nmap 7.99 scan initiated Wed Apr 22 04:41:46 2026 as: /usr/lib/nmap/nmap --privileged -p80 --script http-enum -oN scans/http_enum.txt 192.168.113.130
+Nmap scan report for 192.168.113.130
+Host is up (0.00060s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /tikiwiki/: Tikiwiki
+|   /test/: Test page
+|   /phpinfo.php: Possible information file
+|   /phpMyAdmin/: phpMyAdmin
+|   /doc/: Potentially interesting directory w/ listing on 'apache/2.2.8 (ubuntu) dav/2'
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /index/: Potentially interesting folder
+MAC Address: 00:0C:29:5D:E4:CC (VMware)
+
+# Nmap done at Wed Apr 22 04:41:47 2026 -- 1 IP address (1 host up) scanned in 1.75 seconds
