@@ -25,6 +25,9 @@ In this lab, Nmap (Network Mapper) was used to perform structured scanning and s
 
 - Attacker Machine: Kali Linux (VMware)
 - Target Machine: Metasploitable 2 (VMware)
+  
+<img width="797" height="385" alt="metasploitable2_ip" src="https://github.com/user-attachments/assets/cc5470dc-70d1-428a-88e6-1d6e8c59a662" />
+
 - Network Type: Host-only / NAT (Isolated Lab)
 - Tool Used: Nmap
 
@@ -48,7 +51,12 @@ Command: nmap -sC -sV <target-ip>
 
 # Screenshot Nmap Main Scan
 
-![Nmap Scan](screenshots/sc_sv_command.png)
+<img width="1550" height="766" alt="sc_sv_command" src="https://github.com/user-attachments/assets/560929da-2e94-4a19-84b4-b28c52b513d5" />
+
+<img width="1317" height="775" alt="sc_sv3" src="https://github.com/user-attachments/assets/fac0a614-9d41-4f4b-8676-c0e9513c890b" />
+
+<img width="1662" height="776" alt="sc_sv2" src="https://github.com/user-attachments/assets/195ed2e3-b81f-41a3-9105-01542ecd865a" />
+
 
 Purpose:
 - Detect open ports
@@ -72,11 +80,6 @@ The presence of multiple exposed services increases the attack surface. Several 
 
 Command: nmap -p21 --script ftp-anon <target-ip>
 
-# Screenshot Nmap Main Scan
-
-![FTP Anonymous Login And Http Enumeration](screenshots/ftp_http_enum.png)
-
-
 Purpose:
 - Check if anonymous FTP login is allowed
 
@@ -89,6 +92,9 @@ Security Impact:
 - May expose sensitive files
 
 ---
+
+<img width="966" height="655" alt="ftp_ _http_enum" src="https://github.com/user-attachments/assets/cadb42da-df8c-4f5f-bbad-eadedc414c3e" />
+
 
 ### HTTP Enumeration
 
@@ -111,6 +117,8 @@ curity Impact:
 ### HTTP Header Analysis
 
 Command: nmap -p80 --script http-headers <target-ip>
+
+<img width="823" height="396" alt="http_header" src="https://github.com/user-attachments/assets/e5ab6872-e4cb-4ce3-9845-36e40ea86c62" />
 
 
 Purpose:
@@ -143,18 +151,7 @@ Security Impact:
 
 ---
 
-## 📂 Project Structure
 
-Metasploitable-Nmap-Lab/
-├── README.md
-├── scans/
-│   ├── nmap_main.txt
-│   ├── ftp_anon.txt
-│   ├── http_enum.txt
-│   └── http_headers.txt
-└── screenshots/
-
----
 
 ## ⚠️ Disclaimer
 
